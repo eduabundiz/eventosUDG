@@ -57,28 +57,30 @@
                 <i class="fa fa-calendar"></i>
                 <?php setlocale(LC_TIME, 'spanish');
                 echo utf8_encode(strftime("%A, %d de %B del %Y", strtotime($dia)));
-                ?>
+                ?>                                
             </h3>
+            <div class="dias">
+                <?php foreach ($lista_eventos as $evento) { ?>
+                    
+                    <div class="dia">
+                        <p class="titulo"><?php echo $evento['titulo']; ?></p>
+                        <p class="hora">
+                            <i class="far fa-clock" aria-hidden="true"></i>
+                            <?php echo $evento['fecha'] . " " . $evento['hora']; ?>
+                        </p>     
+                        <p>               
+                            Descripcion: <br>
+                            <?php echo $evento['descripcion']; ?>
+                        </p>
 
-            <?php foreach ($lista_eventos as $evento) { ?>
-                
-                <div class="dia">
-                    <p class="titulo"><?php echo $evento['titulo']; ?></p>
-                    <p class="hora">
-                        <i class="far fa-clock" aria-hidden="true"></i>
-                        <?php echo $evento['fecha'] . " " . $evento['hora']; ?>
-                    </p>     
-                    <p>               
-                        Descripcion: <br>
-                        <?php echo $evento['descripcion']; ?>
-                    </p>
-
-                </div>
-                
-                <?php //print_r($evento); ?>
-                
-            <?php } //Cierre foreach eventos 
-            ?>
+                    </div>
+                    
+                    
+                    
+                    
+                <?php } //Cierre foreach eventos             
+                ?>
+            </div>
         <?php } //foreach días 
         ?>
 
