@@ -1,7 +1,7 @@
 <!--Header-->
 <?php include_once 'includes/templates/header.php'; ?>
 
-<section class="seccion contenedor">
+<section class="seccion ">
     <div class="titulo-universidad">
         <h2>Eventos Universidad de Guadalajara</h2>
     </div>
@@ -21,7 +21,7 @@
 
     ?>
 
-    <div class="calendario ">
+    <div class="calendario contenedor">
         <?php
         $calendario = array();
         while ($eventos = $resultado->fetch_assoc()) {

@@ -154,7 +154,6 @@ div.titulo-universidad h2{
 }
 
 
-
 /*Navegacion principal*/
 section.fondo{
   background-color: yellow !important;
@@ -175,16 +174,7 @@ nav.navegacion-principal a{
   text-align: center;
   margin-bottom: 20px;
 }
-nav.navegacion-principal a:hover{
-  background-color: white;
-}
-nav.navegacion-principal a:last-child{
-  border: 2px solid  white;
-  color: white;
-}
-nav.navegacion-principal a:last-child:hover{
-  color: white;
-}
+
 @media(min-width: 768px){
   nav.navegacion-principal{
     width: 67% ;
@@ -217,6 +207,13 @@ div.calendario:after{
   content: '';
 
 }
+/*Contenedor*/
+@media(min-width: 720px){
+  div.calendario{
+    margin: 0px, 10px; 
+  }
+
+}
 
 /*Dia por separado*/
 div.dia{
@@ -236,8 +233,18 @@ div.dia:hover{
   background-color: #e1e1e1;
 }
 
-
-
+/*footer*/
+.site-footer{
+  background-image: linear-gradient(to top,black,white);  
+  margin-bottom: -20px;
+}
+.copyright{
+  align-self: center;
+  color: #efb810;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 5px;
+}
 
 
 /*Fin de codigo*/
