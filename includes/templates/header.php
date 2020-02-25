@@ -12,7 +12,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" /> <!--Para mapas css-->
+  
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/lightbox.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet"> <!--fuente de google-->

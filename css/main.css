@@ -113,7 +113,7 @@ textarea {
   }
   h2{
     font-family: 'Oswald', sans-serif;
-    font-size: 2.4em;
+    font-size: 1.6em;
     text-transform: uppercase;
     text-align: center;
     color: #8a9597;
@@ -143,16 +143,30 @@ textarea {
 
 /*Header*/
 
+.logo{  
+  margin-top: 5px;
+}
+
 div.titulo-universidad{
   background-image:linear-gradient(black,#d93a12);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
   
 }
 div.titulo-universidad h2{
   color: white;
   padding-top: 20px;
   margin-top: -10px;
+  align-self: center;
 }
-
+@media(min-width: ){
+  div.titulo-universidad h2{
+    font-size: 2.4em;
+    align-self: center;
+  }
+}
 
 /*Navegacion principal*/
 section.fondo{
@@ -231,6 +245,12 @@ div.dia{
 }
 div.dia:hover{
   background-color: #e1e1e1;
+}
+.titulo{
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  
 }
 
 /*footer*/

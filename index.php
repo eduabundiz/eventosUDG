@@ -3,7 +3,9 @@
 
 <section class="seccion ">
     <div class="titulo-universidad">
-        <h2>Eventos Universidad de Guadalajara</h2>
+        <img src="img/udg.png" alt="escudoUDG" width="8%" height="8%" class="logo">
+        <h2>Eventos Universidad de Guadalajara</h2>       
+        <img src="img/udg.png" alt="escudoUDG" width="8%" height="8%" class="logo"> 
     </div>
     <?php
     try {
@@ -35,8 +37,7 @@
                  'hora' => $eventos['hora_inicio'],
                  'categoria' => $eventos['categoria'],
                  'descripcion' =>$eventos['descripcion']
-            //     'icono'=> 'fas'." ".$eventos['icono'],
-            //     'invitado' => $eventos['nombre_invitado'] . " " . $eventos['apellido_invitado']
+
             );
 
             $calendario[$fecha][] = $evento;
@@ -66,10 +67,10 @@
                         <p class="titulo"><?php echo $evento['titulo']; ?></p>
                         <p class="hora">
                             <i class="far fa-clock" aria-hidden="true"></i>
-                            <?php echo $evento['fecha'] . " " . $evento['hora']; ?>
+                            <?php echo " " . $evento['hora']; ?>
                         </p>     
                         <p>               
-                            Descripcion: <br>
+                            Descripción: <br>
                             <?php echo $evento['descripcion']; ?>
                         </p>
 
